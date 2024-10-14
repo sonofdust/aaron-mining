@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-4 md:mb-0 hidden md:block">
-            <h3 className="text-lg font-bold mb-2">MiningCo</h3>
+            <h3 className="text-lg font-bold mb-2">Aaron Mining LLC</h3>
             <p>Leading global mining company</p>
           </div>
           <div className="w-full md:w-1/4 mb-4 md:mb-0 hidden md:block">

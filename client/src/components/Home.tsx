@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Home: React.FC = () => {
     return (
         <div className="container mx-auto px-4 py-8">
-            <h1 className="text-4xl font-bold mb-6">Welcome to MiningCo</h1>
+            <h1 className="text-4xl font-bold mb-6">Welcome to Aaron Mining LLC</h1>
             <p className="text-xl mb-8">Leading the way in sustainable global mining operations</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
