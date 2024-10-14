@@ -3,14 +3,14 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image';
+//import Image from 'next/image';
 
 const Nav: React.FC = () => {
     const pathname = usePathname();
 
     return (
         <nav className="bg-gray-800 text-white p-4">
-            <Image src="/images/logo.png" alt="Company Logo" width={100} height={50} />
+            {/* <Image src="/images/logo.png" alt="Company Logo" width={100} height={50} /> */}
             <ul className="flex space-x-4">
                 <li>
                     <Link href="/" className="hover:underline">
