@@ -1,42 +1,43 @@
 import React from 'react';
+import Image from 'next/image';
 
-const HomePage: React.FC = () => {
+const Home: React.FC = () => {
     return (
-        <main>
-            <div className="container mx-auto px-4 py-8">
-                <h1 className="text-4xl font-bold mb-6">Welcome to MiningCo</h1>
-                <p className="text-xl mb-8">Leading the way in sustainable and innovative mining practices.</p>
+        <div className="container mx-auto px-4 py-8">
+            <h1 className="text-4xl font-bold mb-6">Welcome to MiningCo</h1>
+            <p className="text-xl mb-8">Leading the way in sustainable global mining operations</p>
 
-                <section className="mb-12">
-                    <h2 className="text-2xl font-semibold mb-4">Our Services</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div className="bg-gray-100 p-4 rounded-lg">
-                            <h3 className="text-xl font-semibold mb-2">Ore Extraction</h3>
-                            <p>State-of-the-art techniques for efficient mineral extraction.</p>
-                        </div>
-                        <div className="bg-gray-100 p-4 rounded-lg">
-                            <h3 className="text-xl font-semibold mb-2">Quality Control</h3>
-                            <p>Rigorous testing to ensure the highest ore quality.</p>
-                        </div>
-                        <div className="bg-gray-100 p-4 rounded-lg">
-                            <h3 className="text-xl font-semibold mb-2">Sustainable Mining</h3>
-                            <p>Environmentally conscious mining practices for a better future.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="mb-12">
-                    <h2 className="text-2xl font-semibold mb-4">Latest News</h2>
-                    <ul className="list-disc list-inside">
-                        <li className="mb-2">MiningCo expands operations to South America</li>
-                        <li className="mb-2">New eco-friendly mining technology implemented</li>
-                        <li className="mb-2">Record-breaking ore quality achieved in Q2</li>
-                    </ul>
-                </section>
-
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
+                    <p className="mb-4">At MiningCo, we&apos;re committed to responsible resource extraction while minimizing environmental impact and maximizing community benefits.</p>
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                        Learn More
+                    </button>
+                </div>
+                <div>
+                    <Image
+                        src="/mining-operation.jpg"
+                        alt="Mining Operation"
+                        width={500}
+                        height={300}
+                        className="rounded-lg shadow-md"
+                    />
+                </div>
             </div>
-        </main>
+
+            <div className="mt-12">
+                <h2 className="text-2xl font-semibold mb-4">Latest News</h2>
+                <ul className="list-disc list-inside">
+                    <li>MiningCo Achieves Carbon Neutrality in Australian Operations</li>
+                    <li>New Technology Boosts Efficiency at South American Mine</li>
+                    <li>Community Partnership Program Launches in Africa</li>
+                </ul>
+            </div>
+        </div>
     );
 };
 
-export default HomePage;
+
+
+export default Home;
