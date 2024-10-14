@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 sm:mt-0 text-center">
+        <div className="md:mt-8 sm:mt-0 text-center">
           <p>&copy; 2024 Aaron Mining LLC. All rights reserved.</p>
         </div>
       </div>
